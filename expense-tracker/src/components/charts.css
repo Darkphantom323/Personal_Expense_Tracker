@@ -1,0 +1,74 @@
+/* Container for Charts */
+.chart-container {
+  padding: 1rem;
+  background-color: var(--background-color);
+  border-radius: 8px;
+  max-width: 800px; /* Reduced max width for better fit */
+  margin: 2rem auto; /* Centering the container */
+  box-shadow: var(--box-shadow);
+  position: relative;
+  top: 80px; /* Ensure charts are below the navbar */
+}
+
+/* Title Styling */
+.chart-title {
+  text-align: center;
+  font-size: 1.25rem; /* Adjusted font size */
+  margin-bottom: 1rem; /* Reduced margin */
+  color: var(--primary-color);
+}
+
+/* Dropdown styling for chart selection */
+.chart-dropdown {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.chart-dropdown select {
+  padding: 0.5rem;
+  border: 1px solid var(--input-border-color);
+  border-radius: 4px;
+  background-color: var(--input-background);
+  color: var(--primary-color);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Chart Section */
+.chart-section {
+  margin: 1.5rem 0; /* Reduced margin for better fit */
+  text-align: center;
+  color: var(--primary-color);
+}
+
+/* Make charts smaller and fit better */
+.chart-section canvas {
+  max-width: 100%;
+  height: auto; /* Ensures charts scale with container */
+}
+
+/* No Data Message */
+.no-data-message {
+  text-align: center;
+  font-size: 1.1rem; /* Adjusted font size */
+  color: var(--primary-color);
+}
+
+/* Theme Variables */
+:root {
+  --background-color: #f9f9f9;
+  --primary-color: #333;
+  --input-border-color: #ccc;
+  --input-background: #fff;
+  --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Refined Dark Mode */
+[data-theme="dark"] {
+  --background-color: #1e1e1e;
+  --primary-color: #d1d1d1;
+  --input-border-color: #555;
+  --input-background: #2c2c2c;
+  --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}

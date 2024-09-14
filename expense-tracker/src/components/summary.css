@@ -1,0 +1,48 @@
+/* Ensure the summary-container is below the navbar */
+.summary-container {
+  padding: 1.5rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  max-width: 600px;
+  margin: 2rem auto; /* Center and add space around */
+  text-align: center;
+  margin-top: calc(var(--navbar-height) + 2rem); /* Ensure space below the navbar */
+  box-sizing: border-box; /* Include padding and border in the element’s total width and height */
+}
+
+/* Summary Title */
+.summary-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+/* Summary Details */
+.summary-details p {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.summary-details span {
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+/* Theme Variables */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --accent-color: #007bff;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --navbar-height: 60px; /* Adjust according to your navbar height */
+}
+
+/* Refined Dark Mode */
+[data-theme="dark"] {
+  --bg-color: #1e1e1e;
+  --text-color: #d1d1d1;
+  --accent-color: #66c0f4;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}

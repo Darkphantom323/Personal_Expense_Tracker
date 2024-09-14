@@ -1,0 +1,144 @@
+/* Page Container Styling */
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px); /* Adjust height based on the height of the navbar */
+  padding: 2rem;
+  background-color: var(--page-bg-color);
+  box-sizing: border-box;
+}
+
+/* Expense List Container */
+.expense-list-container {
+  padding: 2rem;
+  background-color: var(--background-color);
+  border-radius: 8px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: var(--box-shadow);
+}
+
+/* Title Styling */
+.expense-list-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+/* Filter Section */
+.filter-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.filter-type,
+.category-filter,
+.date-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.filter-input {
+  padding: 0.5rem;
+  border: 1px solid var(--input-border-color);
+  border-radius: 4px;
+  background-color: var(--input-background);
+  color: var(--primary-color);
+}
+
+.filter-select {
+  padding: 0.5rem;
+  border: 1px solid var(--input-border-color);
+  border-radius: 4px;
+  background-color: var(--input-background);
+  color: var(--primary-color);
+}
+
+.filter-button {
+  padding: 0.5rem 1rem;
+  background-color: var(--button-bg-color);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter-button:hover {
+  background-color: var(--button-hover-bg-color);
+}
+
+/* Expense Table */
+.expense-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+.expense-table th,
+.expense-table td {
+  padding: 0.75rem;
+  border: 1px solid var(--table-border-color);
+  text-align: center;
+}
+
+.expense-table th {
+  background-color: var(--table-header-bg-color);
+  color: #fff;
+}
+
+.expense-table td {
+  background-color: var(--table-row-bg-color);
+  color: var(--primary-color);
+}
+
+/* Delete Button */
+.delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  color: var(--danger-color);
+}
+
+/* Total Sum Section */
+.total-sum {
+  text-align: right;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+/* Theme Variables */
+:root {
+  --background-color: #f9f9f9;
+  --primary-color: #333;
+  --input-border-color: #ccc;
+  --input-background: #fff;
+  --button-bg-color: #007bff;
+  --button-hover-bg-color: #0056b3;
+  --table-border-color: #ccc;
+  --table-header-bg-color: #007bff;
+  --table-row-bg-color: #f1f1f1;
+  --danger-color: #ff5555;
+  --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] {
+  --background-color: #1e1e1e;
+  --primary-color: #d1d1d1;
+  --input-border-color: #555;
+  --input-background: #2c2c2c;
+  --button-bg-color: #3a3a3a;
+  --button-hover-bg-color: #555;
+  --table-border-color: #555;
+  --table-header-bg-color: #3a3a3a;
+  --table-row-bg-color: #2a2a2a;
+  --danger-color: #ff6666;
+  --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
