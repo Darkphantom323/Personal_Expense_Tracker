@@ -1,0 +1,144 @@
+/* General Page Styling */
+.page-container, .chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--page-bg-color);
+  box-sizing: border-box;
+}
+
+.page-container {
+  min-height: calc(100vh - 80px);
+}
+
+/* Expense Form Styling */
+.expense-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  background: var(--form-bg-gradient);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--form-box-shadow);
+  max-width: 500px;
+  width: 100%;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.expense-input {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid var(--input-border-color);
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.expense-input:focus {
+  border-color: var(--input-focus-color);
+  outline: none;
+  box-shadow: 0 0 5px var(--input-focus-color);
+}
+
+.expense-button {
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  background: var(--button-bg-gradient);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: var(--button-box-shadow);
+}
+
+.expense-button:hover {
+  background: var(--button-hover-bg-gradient);
+  transform: translateY(-2px);
+}
+
+/* Chart Section Styling */
+.chart-container {
+  padding: 1rem;
+  background-color: var(--background-color);
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 2rem auto;
+  box-shadow: var(--box-shadow);
+  position: relative;
+  top: 80px;
+}
+
+.chart-title {
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.chart-dropdown {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.chart-dropdown select {
+  padding: 0.5rem;
+  border: 1px solid var(--input-border-color);
+  border-radius: 4px;
+  background-color: var(--input-background);
+  color: var(--primary-color);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.chart-section {
+  margin: 1.5rem 0;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.chart-section canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+.no-data-message {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--primary-color);
+}
+
+/* Light Theme Variables */
+:root {
+  --page-bg-color: #fffaf6; /* Light coral background */
+  --form-bg-gradient: linear-gradient(135deg, #ffe5d4, #ffd1c1);
+  --input-border-color: #ff6f61;
+  --input-focus-color: #ff856c;
+  --button-bg-gradient: linear-gradient(135deg, #ff6f61, #ff856c);
+  --button-hover-bg-gradient: linear-gradient(135deg, #ff856c, #ff9a85);
+  --button-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --form-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  --background-color: #f9f9f9;
+  --primary-color: #333;
+  --input-background: #fff;
+  --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Theme Variables */
+[data-theme="dark"] {
+  --page-bg-color: #0f1d34; /* Midnight blue background */
+  --form-bg-gradient: linear-gradient(135deg, #1e3a5f, #1b2c46);
+  --input-border-color: #5877a1;
+  --input-focus-color: #6b8db6;
+  --button-bg-gradient: linear-gradient(135deg, #1e3a5f, #2d4d7a);
+  --button-hover-bg-gradient: linear-gradient(135deg, #2d4d7a, #3b5f91);
+  --button-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  --form-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  --background-color: #102a44;
+  --primary-color: #d1d1d1;
+  --input-background: #2c2c2c;
+  --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}

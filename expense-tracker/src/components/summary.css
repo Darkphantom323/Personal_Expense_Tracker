@@ -1,4 +1,4 @@
-/* Ensure the summary-container is below the navbar */
+/* Summary Container */
 .summary-container {
   padding: 1.5rem;
   background-color: var(--bg-color);
@@ -6,43 +6,48 @@
   border-radius: 10px;
   box-shadow: var(--box-shadow);
   max-width: 600px;
-  margin: 2rem auto; /* Center and add space around */
+  margin: 2rem auto;
   text-align: center;
   margin-top: calc(var(--navbar-height) + 2rem); /* Ensure space below the navbar */
-  box-sizing: border-box; /* Include padding and border in the element’s total width and height */
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for theme changes */
 }
 
 /* Summary Title */
 .summary-title {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
   color: var(--accent-color);
+  font-weight: 600;
 }
 
 /* Summary Details */
 .summary-details p {
-  font-size: 1.1rem;
-  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  margin: 0.7rem 0;
+  line-height: 1.5;
 }
 
 .summary-details span {
-  color: var(--text-color);
+  color: var(--highlight-color);
   font-weight: bold;
 }
 
-/* Theme Variables */
+/* Light Mode Theme Variables */
 :root {
-  --bg-color: #ffffff;
-  --text-color: #333333;
-  --accent-color: #007bff;
-  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  --navbar-height: 60px; /* Adjust according to your navbar height */
+  --bg-color: #e6f3ff; /* Light blue background */
+  --text-color: #2e4c5a; /* Dark slate for text */
+  --accent-color: #4b3f72; /* Lavender for heading */
+  --highlight-color: #007bff; /* Highlight text */
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  --navbar-height: 60px;
 }
 
-/* Refined Dark Mode */
+/* Dark Mode Theme Variables */
 [data-theme="dark"] {
-  --bg-color: #1e1e1e;
-  --text-color: #d1d1d1;
-  --accent-color: #66c0f4;
-  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  --bg-color: #1a2a3a; /* Dark blue background */
+  --text-color: #d1d1d1; /* Lighter text */
+  --accent-color: #66c0f4; /* Cyan for heading */
+  --highlight-color: #ffddc1; /* Sand for highlight */
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Dark shadow for depth */
 }

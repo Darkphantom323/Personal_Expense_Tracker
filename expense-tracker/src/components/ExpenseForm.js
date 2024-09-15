@@ -24,7 +24,7 @@ const ExpenseForm = () => {
   };
 
   return (
-    <div className="page-container">
+    <div className="expense-page-container">
       <form onSubmit={handleSubmit} className="expense-form">
         <input
           type="number"

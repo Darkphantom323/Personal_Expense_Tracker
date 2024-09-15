@@ -9,6 +9,8 @@ const ExpenseList = () => {
   const [category, setCategory] = useState('');
   const [startDate, setStartDate] = useState('');
   const [endDate, setEndDate] = useState('');
+  const [currentPage, setCurrentPage] = useState(1);
+  const [expensesPerPage] = useState(10);
 
   useEffect(() => {
     fetch('http://localhost:8080/api/expenses')
@@ -26,6 +28,7 @@ const ExpenseList = () => {
         .then((response) => response.json())
         .then((data) => {
           setFilteredExpenses(data);
+          setCurrentPage(1);
         })
         .catch((error) => console.error('Error filtering by category:', error));
     } else if (filterType === 'date') {
@@ -33,10 +36,12 @@ const ExpenseList = () => {
         .then((response) => response.json())
         .then((data) => {
           setFilteredExpenses(data);
+          setCurrentPage(1);
         })
         .catch((error) => console.error('Error filtering by date:', error));
     } else {
       setFilteredExpenses(expenses);
+      setCurrentPage(1);
     }
   };
 
@@ -56,6 +61,13 @@ const ExpenseList = () => {
   };
 
   const totalSum = filteredExpenses.reduce((sum, expense) => sum + parseFloat(expense.amount), 0);
+
+  // Pagination logic
+  const indexOfLastExpense = currentPage * expensesPerPage;
+  const indexOfFirstExpense = indexOfLastExpense - expensesPerPage;
+  const currentExpenses = filteredExpenses.slice(indexOfFirstExpense, indexOfLastExpense);
+
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
     <div className="page-container">
@@ -118,7 +130,7 @@ const ExpenseList = () => {
             </tr>
           </thead>
           <tbody>
-            {filteredExpenses.map((expense) => (
+            {currentExpenses.map((expense) => (
               <tr key={expense.id}>
                 <td>{expense.amount}</td>
                 <td>{expense.category}</td>
@@ -133,6 +145,19 @@ const ExpenseList = () => {
             ))}
           </tbody>
         </table>
+
+        {/* Pagination */}
+        <div className="pagination">
+          {Array.from({ length: Math.ceil(filteredExpenses.length / expensesPerPage) }, (_, i) => (
+            <button
+              key={i + 1}
+              onClick={() => paginate(i + 1)}
+              className={`pagination-button ${currentPage === i + 1 ? 'active' : ''}`}
+            >
+              {i + 1}
+            </button>
+          ))}
+        </div>
 
         {/* Total Sum */}
         <div className="total-sum">
