@@ -16,7 +16,7 @@ The Expense Tracker Application is a web-based tool designed to help users manag
 - **Recent Expenses**: Lists the most recent expenses, showing the date, description, and amount.
 - **Top 3 Expenses**: Highlights the three largest expenses.
 
-![Dashboard Overview](https://github.com/user-attachments/assets/3640d5d7-28b6-44fd-a1df-83d75f7dc571)
+![image](https://github.com/user-attachments/assets/2dda7dd5-45cf-49f8-be43-85b99cbf4911)
 ![Dashboard Overview](https://github.com/user-attachments/assets/69884fd1-7552-4bb4-be0d-426fcfee223f)
 
 ### Expense Tracking
