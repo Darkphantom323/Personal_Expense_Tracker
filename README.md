@@ -53,14 +53,14 @@ The Expense Tracker Application is a web-based tool designed to help users manag
    cd expense-tracker
    ```
 
-2. **Install Dependencies Using Maven**
+2. **Install Dependencies Using npm**
    ```bash
-   mvn install
+   npm install
    ```
 
 3. **Start the Front-end Application**
    ```bash
-   mvn exec:java -Dexec.mainClass="com.example.client.Main"
+   npm start
    ```
 
 ### Back-end
