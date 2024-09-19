@@ -33,8 +33,7 @@ The Expense Tracker Application is a web-based tool designed to help users manag
 ### Visualizations
 
 - **Charts**: Visual representations of expense data in categorical, yearly, monthly, and daily formats. The graphs are scrollable and zoomable.
-- 
-![image](https://github.com/user-attachments/assets/b1519f6f-5ce7-43b3-a209-ce461517f948)
+![image](https://github.com/user-attachments/assets/00f501f8-03a6-4871-b968-f5c90a39b8f6)
 ![image](https://github.com/user-attachments/assets/3f2049ad-b2b2-45fb-ab48-e8556a07574d)
 ![image](https://github.com/user-attachments/assets/8c3ebfd0-41f3-4f1e-9cd5-9109c35c7c71)
 ![image](https://github.com/user-attachments/assets/e7b442a6-d39e-4276-8536-56f4bc54e1f1)
