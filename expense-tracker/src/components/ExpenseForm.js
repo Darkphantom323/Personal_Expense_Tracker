@@ -25,6 +25,7 @@ const ExpenseForm = () => {
 
   return (
     <div className="expense-page-container">
+      <h2 className="expense-title">Add Expense</h2> {/* Moved title outside form */}
       <form onSubmit={handleSubmit} className="expense-form">
         <input
           type="number"

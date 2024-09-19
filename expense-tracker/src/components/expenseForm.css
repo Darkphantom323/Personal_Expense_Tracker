@@ -1,6 +1,16 @@
+/* Styling for the Add Expense Title */
+.expense-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: var(--primary-text);
+  text-align: center;
+}
+
 /* Page Container Styling */
 .expense-page-container {
   display: flex;
+  flex-direction: column; /* Aligns title and form vertically */
   justify-content: center;
   align-items: center;
   min-height: calc(100vh - 80px); /* Adjust height based on the height of the navbar */
