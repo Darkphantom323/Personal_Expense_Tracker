@@ -17,6 +17,7 @@
 .navbar-title {
   font-size: 1.8rem;
   font-weight: 700;
+  text-decoration: none;
   color: var(--primary-text);
   margin: 0;
   transition: color 0.3s ease;

@@ -16,33 +16,30 @@ const ExpenseList = () => {
     fetch('http://localhost:8080/api/expenses')
       .then((response) => response.json())
       .then((data) => {
-        setExpenses(data);
-        setFilteredExpenses(data);
+        // Sort expenses by date in descending order
+        const sortedExpenses = data.sort((a, b) => new Date(b.date) - new Date(a.date));
+        setExpenses(sortedExpenses);
+        setFilteredExpenses(sortedExpenses);
       })
       .catch((error) => console.error('Error fetching expenses:', error));
   }, []);
 
   const handleFilter = () => {
-    if (filterType === 'category') {
-      fetch(`http://localhost:8080/api/expenses/category/${category}`)
-        .then((response) => response.json())
-        .then((data) => {
-          setFilteredExpenses(data);
-          setCurrentPage(1);
-        })
-        .catch((error) => console.error('Error filtering by category:', error));
-    } else if (filterType === 'date') {
-      fetch(`http://localhost:8080/api/expenses/date?start=${startDate}&end=${endDate}`)
-        .then((response) => response.json())
-        .then((data) => {
-          setFilteredExpenses(data);
-          setCurrentPage(1);
-        })
-        .catch((error) => console.error('Error filtering by date:', error));
-    } else {
-      setFilteredExpenses(expenses);
-      setCurrentPage(1);
+    let filteredData = expenses;
+
+    if (filterType === 'category' && category) {
+      filteredData = expenses.filter((expense) => expense.category.toLowerCase() === category.toLowerCase());
+    } else if (filterType === 'date' && startDate && endDate) {
+      filteredData = expenses.filter((expense) => {
+        const expenseDate = new Date(expense.date);
+        return expenseDate >= new Date(startDate) && expenseDate <= new Date(endDate);
+      });
     }
+
+    // Always sort filtered expenses by date in descending order
+    const sortedFilteredExpenses = filteredData.sort((a, b) => new Date(b.date) - new Date(a.date));
+    setFilteredExpenses(sortedFilteredExpenses);
+    setCurrentPage(1); // Reset to first page after filtering
   };
 
   const handleDelete = (id) => {
@@ -51,8 +48,9 @@ const ExpenseList = () => {
     })
       .then((response) => {
         if (response.ok) {
-          setExpenses(expenses.filter((expense) => expense.id !== id));
-          setFilteredExpenses(filteredExpenses.filter((expense) => expense.id !== id));
+          const updatedExpenses = expenses.filter((expense) => expense.id !== id);
+          setExpenses(updatedExpenses);
+          setFilteredExpenses(updatedExpenses);
         } else {
           console.error('Error deleting expense:', response.statusText);
         }
@@ -77,7 +75,11 @@ const ExpenseList = () => {
         <div className="filter-section">
           <div className="filter-type">
             <label>Filter by: </label>
-            <select value={filterType} onChange={(e) => setFilterType(e.target.value)} className="filter-select">
+            <select
+              value={filterType}
+              onChange={(e) => setFilterType(e.target.value)}
+              className="filter-select"
+            >
               <option value="">Select Filter Type</option>
               <option value="category">Category</option>
               <option value="date">Date Range</option>
@@ -132,9 +134,9 @@ const ExpenseList = () => {
           <tbody>
             {currentExpenses.map((expense) => (
               <tr key={expense.id}>
-                <td>{expense.amount}</td>
+                <td>${parseFloat(expense.amount).toFixed(2)}</td>
                 <td>{expense.category}</td>
-                <td>{expense.date}</td>
+                <td>{new Date(expense.date).toLocaleDateString()}</td>
                 <td>{expense.description}</td>
                 <td>
                   <button onClick={() => handleDelete(expense.id)} className="delete-button">

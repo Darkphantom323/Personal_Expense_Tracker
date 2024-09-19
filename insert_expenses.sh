@@ -3,35 +3,83 @@
 # Base API URL
 URL="http://localhost:8080/api/expenses"
 
-# Array of expense entries for September 2023
+# Array of expense entries for October 2023 to August 2024
 expenses=(
-'{"amount": 110.50, "category": "Transportation", "date": "2023-09-05", "description": "Monthly bus pass for work commute."}'
-'{"amount": 52.75, "category": "Groceries", "date": "2023-09-03", "description": "Stocked up on pantry essentials and fresh produce."}'
-'{"amount": 215.00, "category": "Rent/Utilities", "date": "2023-09-01", "description": "Rent payment for studio apartment."}'
-'{"amount": 14.99, "category": "Subscription/Entertainment", "date": "2023-09-07", "description": "Monthly streaming service subscription renewal."}'
-'{"amount": 65.00, "category": "Healthcare", "date": "2023-09-10", "description": "Copay for annual physical check-up."}'
-'{"amount": 38.25, "category": "Groceries", "date": "2023-09-08", "description": "Mid-week grocery run for perishables."}'
-'{"amount": 85.75, "category": "Transportation/Car Maintenance", "date": "2023-09-11", "description": "Oil change and tire rotation service."}'
-'{"amount": 29.99, "category": "Subscription/Entertainment", "date": "2023-09-15", "description": "Purchased a new e-book for leisure reading."}'
-'{"amount": 280.00, "category": "Rent/Utilities", "date": "2023-09-02", "description": "Monthly rent for shared two-bedroom apartment."}'
-'{"amount": 18.50, "category": "Transportation", "date": "2023-09-09", "description": "Rideshare to airport for business trip."}'
-'{"amount": 82.30, "category": "Rent/Utilities", "date": "2023-09-05", "description": "Water and electricity bill for the month."}'
-'{"amount": 135.00, "category": "Shopping/Entertainment", "date": "2023-09-04", "description": "Purchased tickets for an upcoming music festival."}'
-'{"amount": 58.75, "category": "Healthcare", "date": "2023-09-12", "description": "Pharmacy run for over-the-counter medications."}'
-'{"amount": 22.99, "category": "Subscription/Utilities", "date": "2023-09-06", "description": "Monthly fee for cloud storage service."}'
-'{"amount": 95.50, "category": "Dining/Entertainment", "date": "2023-09-16", "description": "Dinner and drinks with friends at a new bistro."}'
-'{"amount": 199.99, "category": "Shopping", "date": "2023-09-13", "description": "Bought a new winter coat on sale."}'
-'{"amount": 42.00, "category": "Dining", "date": "2023-09-14", "description": "Team lunch at a local deli after a successful project."}'
-'{"amount": 11.99, "category": "Subscription/Utilities", "date": "2023-09-08", "description": "Monthly fee for password manager software."}'
-'{"amount": 75.00, "category": "Healthcare", "date": "2023-09-17", "description": "Copay for specialist consultation."}'
-'{"amount": 17.99, "category": "Subscription/Entertainment", "date": "2023-09-09", "description": "Renewed subscription for online learning platform."}'
-'{"amount": 31.50, "category": "Groceries", "date": "2023-09-18", "description": "Quick shop for dinner ingredients and snacks."}'
-'{"amount": 125.00, "category": "Rent/Utilities", "date": "2023-09-03", "description": "Contribution to shared household expenses."}'
-'{"amount": 28.75, "category": "Dining", "date": "2023-09-19", "description": "Quick lunch at a food truck festival downtown."}'
-'{"amount": 55.00, "category": "Transportation/Car Maintenance", "date": "2023-09-20", "description": "Filled up gas tank before weekend road trip."}'
-'{"amount": 195.00, "category": "Rent/Utilities", "date": "2023-09-04", "description": "Monthly rent for a small studio in the city center."}'
-'{"amount": 89.99, "category": "Shopping", "date": "2023-09-21", "description": "Purchased a portable charger and phone case."}'
-'{"amount": 21.50, "category": "Dining/Entertainment", "date": "2023-09-22", "description": "Afternoon tea and pastries at a quaint café."}'
+# October 2023
+'{"amount": 220.50, "category": "Rent/Utilities", "date": "2023-10-01", "description": "Monthly rent payment for October."}'
+'{"amount": 45.30, "category": "Groceries", "date": "2023-10-02", "description": "Bought fresh produce and dairy."}'
+'{"amount": 85.00, "category": "Transportation", "date": "2023-10-03", "description": "Monthly subway pass."}'
+'{"amount": 15.00, "category": "Subscription/Entertainment", "date": "2023-10-05", "description": "Streaming service renewal."}'
+'{"amount": 120.99, "category": "Shopping", "date": "2023-10-07", "description": "New shoes for the fall season."}'
+'{"amount": 62.50, "category": "Dining/Entertainment", "date": "2023-10-09", "description": "Dinner with friends at Italian restaurant."}'
+'{"amount": 35.00, "category": "Transportation/Car Maintenance", "date": "2023-10-11", "description": "Car wash and cleaning."}'
+'{"amount": 90.50, "category": "Healthcare", "date": "2023-10-15", "description": "Medical consultation fee."}'
+
+# November 2023
+'{"amount": 210.00, "category": "Rent/Utilities", "date": "2023-11-01", "description": "Rent for shared apartment."}'
+'{"amount": 53.45, "category": "Groceries", "date": "2023-11-03", "description": "Grocery shopping for the week."}'
+'{"amount": 45.00, "category": "Dining/Entertainment", "date": "2023-11-06", "description": "Brunch with coworkers."}'
+'{"amount": 135.00, "category": "Shopping", "date": "2023-11-08", "description": "Winter coat purchase."}'
+'{"amount": 55.00, "category": "Transportation", "date": "2023-11-10", "description": "Rideshare for business trip."}'
+'{"amount": 98.25, "category": "Subscription/Utilities", "date": "2023-11-12", "description": "Electricity bill for November."}'
+'{"amount": 22.99, "category": "Subscription/Entertainment", "date": "2023-11-15", "description": "Online course subscription renewal."}'
+
+# December 2023
+'{"amount": 250.00, "category": "Rent/Utilities", "date": "2023-12-01", "description": "Rent payment for December."}'
+'{"amount": 38.60, "category": "Groceries", "date": "2023-12-04", "description": "Grocery run before holiday season."}'
+'{"amount": 89.99, "category": "Shopping", "date": "2023-12-10", "description": "Holiday gifts for family."}'
+'{"amount": 72.50, "category": "Dining", "date": "2023-12-12", "description": "Dinner at a new restaurant."}'
+'{"amount": 29.99, "category": "Subscription/Utilities", "date": "2023-12-15", "description": "Monthly cloud storage fee."}'
+'{"amount": 19.99, "category": "Subscription/Entertainment", "date": "2023-12-18", "description": "Magazine subscription renewal."}'
+
+# January 2024
+'{"amount": 210.00, "category": "Rent/Utilities", "date": "2024-01-01", "description": "Rent for January 2024."}'
+'{"amount": 63.50, "category": "Groceries", "date": "2024-01-05", "description": "Stocked up on New Year groceries."}'
+'{"amount": 99.99, "category": "Shopping", "date": "2024-01-08", "description": "New clothes during winter sales."}'
+'{"amount": 32.50, "category": "Dining/Entertainment", "date": "2024-01-12", "description": "Lunch with colleagues."}'
+'{"amount": 85.75, "category": "Healthcare", "date": "2024-01-14", "description": "Pharmacy expenses."}'
+'{"amount": 110.99, "category": "Transportation", "date": "2024-01-15", "description": "New set of tires for the car."}'
+'{"amount": 22.99, "category": "Subscription", "date": "2024-01-18", "description": "Music streaming service."}'
+
+# February 2024
+'{"amount": 200.00, "category": "Rent/Utilities", "date": "2024-02-01", "description": "Rent for February."}'
+'{"amount": 55.45, "category": "Groceries", "date": "2024-02-05", "description": "Weekly grocery shopping."}'
+'{"amount": 48.75, "category": "Dining/Entertainment", "date": "2024-02-09", "description": "Dinner at a local diner."}'
+'{"amount": 120.50, "category": "Shopping", "date": "2024-02-12", "description": "Bought a new smartwatch."}'
+'{"amount": 98.99, "category": "Transportation", "date": "2024-02-14", "description": "Gas tank refill for road trip."}'
+'{"amount": 16.99, "category": "Subscription/Utilities", "date": "2024-02-17", "description": "Software subscription renewal."}'
+
+# March 2024
+'{"amount": 230.00, "category": "Rent/Utilities", "date": "2024-03-01", "description": "Rent payment for March."}'
+'{"amount": 70.00, "category": "Groceries", "date": "2024-03-05", "description": "Weekly grocery shopping."}'
+'{"amount": 45.99, "category": "Shopping", "date": "2024-03-08", "description": "Bought a pair of sneakers."}'
+'{"amount": 89.50, "category": "Dining", "date": "2024-03-10", "description": "Weekend brunch with friends."}'
+'{"amount": 65.00, "category": "Transportation", "date": "2024-03-12", "description": "Monthly bus pass."}'
+
+# April 2024
+'{"amount": 250.00, "category": "Rent/Utilities", "date": "2024-04-01", "description": "Rent payment for April."}'
+'{"amount": 60.30, "category": "Groceries", "date": "2024-04-03", "description": "Groceries for the week."}'
+'{"amount": 95.99, "category": "Shopping", "date": "2024-04-06", "description": "New spring wardrobe."}'
+'{"amount": 45.75, "category": "Dining", "date": "2024-04-08", "description": "Lunch with friends."}'
+
+# May 2024
+'{"amount": 220.00, "category": "Rent/Utilities", "date": "2024-05-01", "description": "Rent payment for May."}'
+'{"amount": 55.20, "category": "Groceries", "date": "2024-05-03", "description": "Grocery run."}'
+'{"amount": 35.00, "category": "Dining/Entertainment", "date": "2024-05-05", "description": "Dinner at a local restaurant."}'
+
+# June 2024
+'{"amount": 200.00, "category": "Rent/Utilities", "date": "2024-06-01", "description": "Rent payment for June."}'
+'{"amount": 48.60, "category": "Groceries", "date": "2024-06-03", "description": "Weekly grocery shopping."}'
+
+# July 2024
+'{"amount": 215.00, "category": "Rent/Utilities", "date": "2024-07-01", "description": "Rent payment for July."}'
+'{"amount": 65.45, "category": "Groceries", "date": "2024-07-05", "description": "Groceries for BBQ party."}'
+'{"amount": 55.00, "category": "Transportation", "date": "2024-07-07", "description": "Fuel for summer road trip."}'
+
+# August 2024
+'{"amount": 250.00, "category": "Rent/Utilities", "date": "2024-08-01", "description": "Rent for August."}'
+'{"amount": 75.50, "category": "Groceries", "date": "2024-08-03", "description": "Groceries for summer gatherings."}'
+'{"amount": 50.00, "category": "Dining", "date": "2024-08-06", "description": "Dinner with family at the beach."}'
 )
 
 # Loop through each expense and make the API call

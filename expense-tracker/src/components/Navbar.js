@@ -21,7 +21,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-    <h2 className="navbar-title">Expense Tracker</h2>
+    <Link to="/" className="navbar-title">Expense Tracker</Link>
     <div className="navbar-content">
       <ul className="navbar-list">
         <li className="navbar-item"><Link to="/" className="navbar-link">Summary</Link></li>
