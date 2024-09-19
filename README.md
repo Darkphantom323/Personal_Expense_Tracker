@@ -26,16 +26,17 @@ The Expense Tracker Application is a web-based tool designed to help users manag
 
 ![image](https://github.com/user-attachments/assets/587c9fda-5911-400d-beb3-f69a635ef6c9)
 ![image](https://github.com/user-attachments/assets/5b17d1b2-8d19-49b7-a176-cd9c9464dfaf)
-![image](https://github.com/user-attachments/assets/88380c51-be51-4d83-a0b8-2ba4720cba3a)
-![image](https://github.com/user-attachments/assets/99f8e545-0f9a-4ce6-a3c4-e2ca682c1efd)
+![image](https://github.com/user-attachments/assets/5c6789d3-c183-44bf-8cba-3494ffd1c508)
+![image](https://github.com/user-attachments/assets/42b417cf-5541-42c1-a04e-af624fc77061)
+
 
 ### Visualizations
 
 - **Charts**: Visual representations of expense data in categorical, yearly, monthly, and daily formats. The graphs are scrollable and zoomable.
 
-![image](https://github.com/user-attachments/assets/2bf7c7ea-fae7-4847-86ae-a73ea8913f99)
-![image](https://github.com/user-attachments/assets/c3dbc37b-1948-498a-8db2-e855df0b0be3)
-![image](https://github.com/user-attachments/assets/3faa1980-f6d4-44ea-a630-cb65c9bd174c)
+![image](https://github.com/user-attachments/assets/d5bdce8f-2502-4703-b052-245f995a5537)
+![image](https://github.com/user-attachments/assets/9ee03555-2dcd-4d17-a749-21bc0f4dcc50)
+![image](https://github.com/user-attachments/assets/8c644fdc-bf96-491f-be72-d82caa3335b0)
 ![image](https://github.com/user-attachments/assets/e7b442a6-d39e-4276-8536-56f4bc54e1f1)
 
 ### Data Management
