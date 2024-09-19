@@ -24,19 +24,19 @@ The Expense Tracker Application is a web-based tool designed to help users manag
 - **Add Expense**: Users can input new expenses including description, amount, date, and category.
 - **View Expenses**: Access a comprehensive list of all tracked expenses in a paginated way. You can also filter by date or category.
 
-![Add Expense](https://github.com/user-attachments/assets/587c9fda-5911-400d-beb3-f69a635ef6c9)
-![View Expenses](https://github.com/user-attachments/assets/5b17d1b2-8d19-49b7-a176-cd9c9464dfaf)
-![Expense List](https://github.com/user-attachments/assets/88380c51-be51-4d83-a0b8-2ba4720cba3a)
-![Filtered Expenses](https://github.com/user-attachments/assets/99f8e545-0f9a-4ce6-a3c4-e2ca682c1efd)
+![image](https://github.com/user-attachments/assets/587c9fda-5911-400d-beb3-f69a635ef6c9)
+![image](https://github.com/user-attachments/assets/5b17d1b2-8d19-49b7-a176-cd9c9464dfaf)
+![image](https://github.com/user-attachments/assets/88380c51-be51-4d83-a0b8-2ba4720cba3a)
+![image](https://github.com/user-attachments/assets/99f8e545-0f9a-4ce6-a3c4-e2ca682c1efd)
 
 ### Visualizations
 
 - **Charts**: Visual representations of expense data in categorical, yearly, monthly, and daily formats. The graphs are scrollable and zoomable.
 
-![Categorical Chart](https://github.com/user-attachments/assets/2bf7c7ea-fae7-4847-86ae-a73ea8913f99)
-![Yearly Chart](https://github.com/user-attachments/assets/c3dbc37b-1948-498a-8db2-e855df0b0be3)
-![Monthly Chart](https://github.com/user-attachments/assets/3faa1980-f6d4-44ea-a630-cb65c9bd174c)
-![Daily Chart](https://github.com/user-attachments/assets/e7b442a6-d39e-4276-8536-56f4bc54e1f1)
+![image](https://github.com/user-attachments/assets/2bf7c7ea-fae7-4847-86ae-a73ea8913f99)
+![image](https://github.com/user-attachments/assets/c3dbc37b-1948-498a-8db2-e855df0b0be3)
+![image](https://github.com/user-attachments/assets/3faa1980-f6d4-44ea-a630-cb65c9bd174c)
+![image](https://github.com/user-attachments/assets/e7b442a6-d39e-4276-8536-56f4bc54e1f1)
 
 ### Data Management
 
