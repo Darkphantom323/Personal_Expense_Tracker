@@ -25,8 +25,12 @@ The Expense Tracker Application is a web-based tool designed to help users manag
 - **View Expenses**: Access a comprehensive list of all tracked expenses in a paginated way. You can also filter by date or category.
 
 ![image](https://github.com/user-attachments/assets/587c9fda-5911-400d-beb3-f69a635ef6c9)
+
+- **Pagination**
 ![image](https://github.com/user-attachments/assets/5b17d1b2-8d19-49b7-a176-cd9c9464dfaf)
+- **Filter by category**
 ![image](https://github.com/user-attachments/assets/5c6789d3-c183-44bf-8cba-3494ffd1c508)
+- **Filter by date range**
 ![image](https://github.com/user-attachments/assets/42b417cf-5541-42c1-a04e-af624fc77061)
 
 
