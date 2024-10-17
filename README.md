@@ -49,7 +49,7 @@ The Expense Tracker Application is a web-based tool designed to help users manag
 
 - **Backend Integration**: Fetches and manages expense data from a Spring Boot backend API.
 - **Database**: Uses PostgreSQL for data storage, ensuring reliability and scalability.
-
+- **Caching**: Integrates Redis for caching to optimize performance and reduce database load.
 
 ## Installation
 
